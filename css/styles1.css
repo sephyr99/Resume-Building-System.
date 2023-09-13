@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&family=Questrial&display=swap');
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"]
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  ul{
+      list-style-type: none;
+  }
+ a {
+     text-decoration: none;
+ }
+ h1, h2, h3, h4, h5, h6{
+    font-family: "Raleway", sans-serif;
+   }
+   p, a, input{
+    font-family: 'Mulish', sans-serif;
+   }
+ :root {
+    --primary-color: #112B3C;
+    --secondary-color: #F36B17;
+    --light-color: #F8F9F9;
+    --shadow-color: #E3E6E8;
+    --complementary-color: #919DA5;
+    --overlay-color: #9eabb4bd;
+  }
+  .flex-class{
+      display: flex;
+      flex-direction: column;
+  }
+  .flex-justification{
+      display: flex;
+      justify-content: center;
+  }
+  .hero_page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--overlay-color);
+  }
+  .hero_page_container {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 1.1;
+    position: absolute;
+  }
+  .illustration{
+      background-color: var(--complementary-color);
+      height: 80%;
+      width: 28%;
+      align-items: center;
+      gap: 1rem;
+  }
+  .illustration img{
+      width: 40%;
+      cursor: pointer;
+      transition: transform 0.5s ease-in-out;
+}
+.illustration img:hover{
+    transform: scale(1.1);
+}
+.illustration h2{
+    width: 100%;
+    text-align: center;
+   font-size: 2rem;
+    color: var(--primary-color);
+    text-shadow: 1.5px 2px var(--shadow-color);
+}
+.login_form{
+    background-color: var(--shadow-color);
+    height: 80vh;
+    width: 28%;
+    padding: 4rem 3rem;
+}
+.form{
+    margin-block: 2rem 1.2rem;
+    height: 100%;
+}
+.form_input{
+    flex-wrap: wrap;
+}
+.form .email, .password, .name{
+    padding: 0.6rem 0.5rem;
+    width: 100%;
+    margin-block-end: 1rem;
+    border: 1px solid var(--complementary-color);
+    border-radius: 8px;
+    outline: none;
+}
+.sign_up_btn{
+    gap: 1rem;
+    padding-block-end: 1rem;
+}
+.sign_up_btn > .sign_up, .with_google{
+    padding: 0.7rem 0.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+}
+.sign_up{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+.with_google{
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+span a{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+@media (max-width: 1120px){
+    .illustration, .login_form{
+        width: 35%;
+    }
+}
+@media (max-width: 990px){
+    .illustration{
+        display: none;
+    }
+    .login_form{
+        width: 50%;
+    }
+}
+@media (max-width: 720px){
+    .illustration{
+        display: none;
+    }
+    .login_form{
+        width: 60%;
+    }
+}
+@media (max-width: 584px){
+    .illustration{
+        display: none;
+    }
+    .login_form{
+        width: 70%;
+    }
+}
+@media (max-width: 490px){
+    .illustration{
+        display: none;
+    }
+    .login_form{
+        width: 80%;
+    }
+}

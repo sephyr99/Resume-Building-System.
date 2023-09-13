@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&family=Questrial&display=swap');
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"]
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  ul{
+      list-style-type: none;
+  }
+ a {
+     text-decoration: none;
+ }
+ h1, h2, h3, h4, h5, h6{
+  font-family: "Raleway", sans-serif;
+ }
+ p, a, input, span, textarea, select{
+  font-family: 'Mulish', sans-serif;
+ }
+ :root {
+    --primary-color: #112B3C;
+    --secondary-color: #F36B17;
+    --light-color: #ffffff;
+    --shadow-color: #e3e6e8a9;
+    --complementary-color: #919DA5;
+    --overlay-color: #9eabb4bd;
+  }
+  .flex-direction{
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-align{
+    display: flex;
+    align-items: center;
+    
+  }
+  .flex-space{
+    display: flex;
+    justify-content: space-between;
+  }
+/* Navbar */
+header{
+background-color: var(--primary-color);
+padding: 1rem 4rem;
+}
+.container{
+  width: 100%;
+}
+.brandtext{
+    color: var(--secondary-color);
+}
+nav{
+    gap: 2rem;
+}
+  ul {
+    display: flex;
+    padding: 0%;
+  }
+  .nav-links{
+    display: flex;
+    align-items: center;
+  }
+.nav_menu{
+    color: var(--light-color);
+    padding: 0.5rem 1.2rem;
+    margin: 0 5px;
+}
+  .nav_menu:hover {
+    border-bottom: 2px var(--secondary-color) solid;
+    border-radius: 2px;
+    transition: 150ms ease-in;
+  }
+  .logout_cta{
+      background-color: var(--secondary-color);
+      color: var(--light-color);
+      padding: 0.5rem 1.5rem;
+      border-radius: 1rem;
+  }
+  .logout_cta:hover{
+    background-color: transparent;
+    border: 2px solid var(--light-color);
+    color: var(--secondary-color);
+  }
+  /* Header Stops */
+
+  /* Hero Section */
+  main{
+    background-image: url("/images/background-image.jpg");
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 2rem;
+  }
+  
+  .introduction-text h3{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+  }
+  .introduction-text p{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+  }
+  .info-container{
+    background-color: var(--light-color);
+    display: flex;
+    margin: 0.5rem 4rem;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .text-for-user h4{
+    font-size: 1.5rem;
+  }
+  .text-for-user p{
+    font-size: 1.1rem;
+  }
+    /* Work Experience start */
+  /* .input-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+  }
+  .input-field h4{
+    font-size: 1.3rem;
+    margin-block-end: .5rem;
+  }
+  .form-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+  .input-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .input-box span{
+    font-size: 1.05rem;
+    margin-block-end: 0.2rem;
+    color: var(--primary-color);
+  }
+  .input-box input{
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: var(--shadow-color);
+    color: var(--primary-color);
+    border: 1px solid var(--complementary-color);
+  }
+  .input-box input:focus{
+    border-block-end: 2px solid var(--secondary-color);
+  }
+  .present-date{
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin-inline-start: 21rem;
+      margin-block-start: 1rem;
+      font-family: 'Mulish', sans-serif;
+  }
+  .add-work{
+      color: var(--secondary-color);
+      font-weight:600;
+  } */
+  /* Work Experience ends */
+
+  /* Education History */
+    /* .input-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+  }
+  .input-field h4{
+    font-size: 1.3rem;
+    margin-block-end: .5rem;
+  }
+  .form-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+  }
+  .input-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .input-box span{
+    font-size: 1.05rem;
+    margin-block-end: 0.2rem;
+    color: var(--primary-color);
+  }
+  .input-box input{
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: var(--shadow-color);
+    color: var(--primary-color);
+    border: 1px solid var(--complementary-color);
+  }
+  .input-box input:focus{
+    border-block-end: 2px solid var(--secondary-color);
+  }
+  .present-date{
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin-inline-start: 21rem;
+      margin-block-start: 1rem;
+      font-family: 'Mulish', sans-serif;
+  }
+  .add-work{
+      color: var(--secondary-color);
+      font-weight:600;
+  } */
+    /* Education History Ends */
+
+    /* Skills Start */
+    /* .input-form{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 60%;
+    }
+    .input-field h4{
+      font-size: 1.3rem;
+      margin-block-end: .5rem;
+    }
+    .form-area{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      width: 100%;
+    }
+    .input-box{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .input-box span{
+      font-size: 1.05rem;
+      margin-block-end: 0.2rem;
+      color: var(--primary-color);
+    }
+    .input-box input{
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 1rem;
+      outline: none;
+      background-color: var(--shadow-color);
+      color: var(--primary-color);
+      border: 1px solid var(--complementary-color);
+    }
+    .input-box input:focus{
+      border-block-end: 2px solid var(--secondary-color);
+    }
+    .skill-level{
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 1rem;
+      outline: none;
+      background-color: var(--shadow-color);
+      color: var(--primary-color);
+      border: 1px solid var(--complementary-color);
+    }
+    .add-skill{
+      margin-block-start: 2rem;
+    }
+    .add-skill button{
+      font-size: 1rem;
+      font-weight: 550;
+      cursor: pointer;
+      padding: 0.8rem 2rem;
+      background-color: var(--shadow-color);
+      border: 2px solid var(--complementary-color);
+      color: var(--primary-color);
+    } */
+    /* Skills Ends */
+
+    /* Language Starts */
+    /* .input-form{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 60%;
+    }
+    .input-field h4{
+      font-size: 1.3rem;
+      margin-block-end: .5rem;
+    }
+    .form-area{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      width: 100%;
+    }
+    .input-box{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .input-box span{
+      font-size: 1.05rem;
+      margin-block-end: 0.2rem;
+      color: var(--primary-color);
+    }
+    .input-box input{
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 1rem;
+      outline: none;
+      background-color: var(--shadow-color);
+      color: var(--primary-color);
+      border: 1px solid var(--complementary-color);
+    }
+    .input-box input:focus{
+      border-block-end: 2px solid var(--secondary-color);
+    }
+    .language-level{
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 1rem;
+      outline: none;
+      background-color: var(--shadow-color);
+      color: var(--primary-color);
+      border: 1px solid var(--complementary-color);
+    }
+    .add-language{
+      margin-block-start: 2rem;
+    }
+    .add-language button{
+      font-size: 1rem;
+      font-weight: 550;
+      cursor: pointer;
+      padding: 0.8rem 2rem;
+      background-color: var(--shadow-color);
+      border: 2px solid var(--complementary-color);
+      color: var(--primary-color);
+    } */
+    /* Add Langugage Ends */
+
+    /* Other sections */
+    /* .input-form{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 60%;
+    }
+    .input-field h4{
+      font-size: 1.3rem;
+      margin-block-end: .5rem;
+    }
+    .section-area{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      width: 100%;
+      margin-block-start: 2rem;
+    }
+    .section-box{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      cursor: pointer;
+    }
+    .section-box span{
+      font-size: 1.05rem;
+      margin-block-end: 0.2rem;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+    .section-box i{
+      padding: 0.6rem;
+      font-size: 1rem;
+      background-color: var(--shadow-color);
+      color: var(--primary-color);
+      border: 1px solid var(--complementary-color);
+    } */
+    /* Other section ends */
+
+    /* References starts */
+    /* .input-form{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 60%;
+    }
+    .input-field h4{
+      font-size: 1.3rem;
+      margin-block-end: .5rem;
+    }
+    .form-area{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      width: 100%;
+    }
+    .input-box{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .input-box span{
+      font-size: 1.05rem;
+      margin-block-end: 0.2rem;
+      color: var(--primary-color);
+    }
+    .input-box input{
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 1rem;
+      outline: none;
+      background-color: var(--shadow-color);
+      color: var(--primary-color);
+      border: 1px solid var(--complementary-color);
+    }
+    .input-box input:focus{
+      border-block-end: 2px solid var(--secondary-color);
+    }
+    .more-reference{
+      margin-block-start: 2rem;
+    }
+    .add-reference{
+      color: var(--secondary-color);
+      font-weight:600;
+  } */
+    /* References ends */
+
+    /* Projects/Publications Starts */
+    /* .input-form{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 60%;
+    }
+    .input-field h4{
+      font-size: 1.3rem;
+      margin-block-end: .5rem;
+    }
+    .form-area{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      width: 100%;
+    }
+    .input-box{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .input-box span{
+      font-size: 1.05rem;
+      margin-block-end: 0.2rem;
+      color: var(--primary-color);
+    }
+    .input-box input, .project-description{
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 1rem;
+      outline: none;
+      background-color: var(--shadow-color);
+      color: var(--primary-color);
+      border: 1px solid var(--complementary-color);
+    }
+    .input-box input:focus{
+      border-block-end: 2px solid var(--secondary-color);
+    }
+    .more-information{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-block-start: 2rem;
+    }
+    .more-information textarea{
+      width: 100%;
+      height: 30vh;
+    }
+    .add-reference{
+      color: var(--secondary-color);
+      font-weight:600;
+  } */
+    /* Projects/Publications Ends */
+
+    /* Hobbies starts */
+    /* .input-form{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 60%;
+    }
+    .input-field h4{
+      font-size: 1.3rem;
+      margin-block-end: .5rem;
+    }
+    .form-area{
+      width: 100%;
+    }
+    .hobbies-interest{
+      width: 100%;
+      height: 20vh;
+      padding: 0.6rem;
+      font-size: 1rem;
+      outline: none;
+      background-color: var(--shadow-color);
+      color: var(--primary-color);
+      border: 1px solid var(--complementary-color);
+    }
+    .hobbies-interest:focus{
+      border-block-end: 2px solid var(--secondary-color);
+    } */
+    /* Hobbies ends */
+
+    /* Award Starts */
+    /* .input-form{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 60%;
+    }
+    .input-field h4{
+      font-size: 1.3rem;
+      margin-block-end: .5rem;
+    }
+    .form-area{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      width: 100%;
+    }
+    .input-box{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .input-box span{
+      font-size: 1.05rem;
+      margin-block-end: 0.2rem;
+      color: var(--primary-color);
+    }
+    .input-box input, .project-description{
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 1rem;
+      outline: none;
+      background-color: var(--shadow-color);
+      color: var(--primary-color);
+      border: 1px solid var(--complementary-color);
+    }
+    .input-box input:focus{
+      border-block-end: 2px solid var(--secondary-color);
+    }
+    .more-information{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-block-start: 2rem;
+    }
+    .more-information textarea{
+      width: 100%;
+      height: 30vh;
+    }
+    .add-reference{
+      color: var(--secondary-color);
+      font-weight:600;
+  } */
+    /* Award Ends */
+
+    /* Certificate Start */
+    .input-form{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 60%;
+    }
+    .input-field h4{
+      font-size: 1.3rem;
+      margin-block-end: .5rem;
+    }
+    .form-area{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      width: 100%;
+    }
+    .input-box{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .input-box span{
+      font-size: 1.05rem;
+      margin-block-end: 0.2rem;
+      color: var(--primary-color);
+    }
+    .input-box input, .certificate-description, textarea, select{
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 1rem;
+      outline: none;
+      background-color: var(--shadow-color);
+      color: var(--primary-color);
+      border: 1px solid var(--complementary-color);
+    }
+    .input-box input:focus{
+      border-block-end: 2px solid var(--secondary-color);
+    }
+    .more-information{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-block-start: 2rem;
+    }
+    .more-information textarea{
+      width: 100%;
+      height: 30vh;
+    }
+    .add-certifications{
+      color: var(--secondary-color);
+      font-weight:600;
+  }
+    /* Certificate Ends */
+  .form-cta{
+    display: flex;
+    margin-block-start: 4rem;
+    justify-content: space-between;
+  }
+  .form-cta .back-cta{
+    padding: 0.8rem 4rem;
+    font-size: 1rem;
+    font-weight: 550;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+  .form-cta .back-cta:hover{
+    background-color: var(--shadow-color);
+    border: 2px solid var(--complementary-color);
+    color: var(--primary-color);
+  }
+  .form-cta .continue-cta{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 550;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    cursor: pointer;
+  }
+  .form-cta .continue-cta:hover{
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+  }
+  .resume-preview{
+    background-color: var(--shadow-color);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+
+  }
+  .cta-buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+  .template-cta{
+    background-color: var(--complementary-color);
+    color: var(--light-color);
+    padding: 0.4rem 0.8rem;
+  }
+  .preview-cta{
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 0.4rem 0.8rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .download-button{
+   display: flex;
+   justify-content: flex-end;
+  }
+  .download-cta{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 550;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+.all-right{
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border-block-start: 2px solid var(--complementary-color);
+  text-align: center;
+  padding-block: 1rem;
+  font-size: 1.2rem;
+}

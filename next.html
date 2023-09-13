@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/styles6.css"/>
+        <title>Resume Builder</title>
+      </head>
+      <body>
+          <!-- Header and Navigation Section -->
+          <header class="navbar">
+                <div class="container flex-space">
+                    <div class="brandlogo flex-align">
+                        <h2 class="brandtext">SA Resume</h2>
+                    </div>
+                  <nav class="nav-links flex-space">
+                    <ul>
+                      <li><a class="nav_menu" href="dashboard.html">Dashboard</a></li>
+                      <li><a class="nav_menu" href="templates.html">Templates</a></li>
+                      <li><a class="nav_menu" href="create-resume.html">Create Resume</a></li>
+                    </ul>
+                    <a href="/index.html" class="logout_cta">Log out</a>
+                  </nav>
+                </div>
+          </header>
+      <main>
+        <div class="introduction-text">
+          <h3 class="h3-text">Create your resume in 5 minutes.</h3>
+        <p>The platform is here to assist you in creating a polished and impactful resume.</p>
+        </div>
+        <div class="info-container">
+
+          <!-- Professional Summary Start -->
+          <!-- <div class="input-form">
+            <div class="text-for-user">
+              <h4>Provide your career or professional summary</h4>
+              <p>Describe your ability in one paragraph.</p>
+            </div>
+            <div class="input-field">
+              <h4>Select the summary you wish to provide.</h4>
+                <div class="form-area">
+                    <div class="select-option">
+                        <input type="radio" name="Career Objective" class="career-obj" id="careerObj"> Career Objective
+                      <input type="radio" name="Career Objective" class="career-obj" id="careerObj"> Professional Summary
+                      </div>
+                  <div class="input-box">
+                    <span>Your Career Objective</span>
+                    <textarea name="user summary" class="career-obj" id="careerObj"></textarea>
+                  </div>
+                </div>
+              <div class="form-cta">
+                <button type="button" class="back-cta">Back</button>
+                <button type="button" class="continue-cta">Save & Continue</button>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="resume-preview">
+            <div class="cta-buttons">
+              <a href="#" class="template-cta"><i class="far fa-address-book" aria-hidden="true"></i> Select Template</a>
+              <button type="preview" class="preview-cta">Preview</button>
+            </div>
+            <img src="/images/r2.jpg" alt="">
+            <div class="download-button">
+              <button type="download" class="download-cta">Download Resume</button>
+            </div>
+          </div> -->
+          <!-- Professional Summary Ends -->
+
+          <!-- Work Experience -->
+          <!-- <div class="input-form">
+            <div class="text-for-user">
+              <h4>Let's work on your experience.</h4>
+              <p>Start with your most recent job first. Use bullet points to note your achievements, if possible - use numbers or facts.</p>
+            </div>
+            <div class="input-field">
+              <h4>Work Experience.</h4>
+                <div class="form-area">
+                    <div class="input-box">
+                        <span>Job Title*</span>
+                        <input type="text" name="jobtitle" class="job-title" id="jobTitle" placeholder="Input Job Title" required>
+                      </div>
+                      <div class="input-box">
+                        <span>Employer</span>
+                        <input type="text" name="employer" class="employer" id="Employer" placeholder="Input Employer">
+                      </div>
+                      <div class="input-box">
+                        <span>City*</span>
+                        <input type="text" name="city" class="city" id="cityLocation" placeholder="Input the City" required>
+                      </div>
+                      <div class="input-box">
+                        <span>Country*</span>
+                        <input type="text" name="country" class="country" id="country" placeholder="Input the Country" required>
+                      </div>
+                      <div class="input-box">
+                        <span>Start Date*</span>
+                        <input type="date" name="startdate" class="start-date" id="startDate" placeholder="Select Date">
+                      </div>
+                      <div class="input-box">
+                        <span>End Date*</span>
+                        <input type="date" name="enddate" class="end-date" id="endDate" placeholder="Select Date">
+                      </div>
+                </div>
+                <div class="present-date">
+                <input type="checkbox" name="present" class="present-end-date" id="present-endDate"> Currently work here.
+                </div>
+                <a href="#" class="add-work">+ Add more of your work experience</a>
+            </div>
+          </div> -->
+            <!-- Work Experience ends -->
+
+            <!-- Eduation History Start -->
+            <!-- <div class="input-form">
+                <div class="text-for-user">
+                  <h4>Tell us about your education history</h4>
+                  <p>Tell us about any colleges, vocational programs, or training courses you took. Even if you didn’t finish, it’s important to list them.</p>
+                </div>
+                <div class="input-field">
+                  <h4>Education.</h4>
+                  <div class="form-area">
+                    <div class="input-box">
+                        <span>School Name*</span>
+                        <input type="text" name="School" class="school-name" id="schoolName" placeholder="Enter your school name" required>
+                      </div>
+                      <div class="input-box">
+                        <span>School Location</span>
+                        <input type="text" name="Location" class="school-location" id="schoolLocation" placeholder="Enter the location of the school">
+                      </div>
+                      <div class="input-box">
+                        <span>Degree*</span>
+                        <input type="text" name="Degree" class="degree" id="degreeGrade" placeholder="e.g. B.Sc., M.Sc., OLevel" required>
+                      </div>
+                      <div class="input-box">
+                        <span>Field of Study</span>
+                        <input type="text" name="Field" class="study-area" id="studyArea" placeholder="e.g. Computer Science" required>
+                      </div>
+                      <div class="input-box">
+                        <span>Start Date*</span>
+                        <input type="month" name="startdate" class="start-date" id="startDate" placeholder="Month, Year">
+                      </div>
+                      <div class="input-box">
+                        <span>End Date*</span>
+                        <input type="month" name="enddate" class="end-date" id="endDate" placeholder="Month, Year">
+                      </div>
+                </div>
+                <div class="present-date">
+                <input type="checkbox" name="present" class="present-end-date" id="present-endDate"> Currently Study here.
+                </div>
+                    <a href="#" class="add-work">+ Add more education</a>
+                </div>
+            </div> -->
+                 <!-- Eduation History Ends -->
+
+                 <!-- Skills Start -->
+                 <!-- <div class="input-form">
+                    <div class="text-for-user">
+                      <h4>Let’s pick your top skills to determine your capacity.</h4>
+                      <p>Tell us about any skills you possess. Note that you can add multiple skills.</p>
+                    </div>
+                    <div class="input-field">
+                      <h4>Your Skills.</h4>
+                      <div class="form-area">
+                        <div class="input-box">
+                            <span>Skill*</span>
+                            <input type="text" name="Skill" class="user-skill" id="userSkill" placeholder="Enter your skill" required>
+                          </div>
+                          <div class="input-box">
+                            <span>Skill Level</span>
+                            <select name="skill Level" class="skill-level" id="skillLevel">
+                              <option value="Novice" selected>Novice</option>
+                              <option value="Beginer">Beginer</option>
+                              <option value="Skillful">Skillful</option>
+                              <option value="Experienced">Experienced</option>
+                              <option value="Expert">Expert</option>
+                            </select>
+                          </div>
+                      </div>
+                        <div class="add-skill">
+                          <button type="submit" class="skill-plus">+ Add Skill</button>
+                        </div>
+                    </div>
+                 </div> -->
+                 <!-- Skills Ends -->
+
+                    <!-- Language Speaking -->
+                    <!-- <div class="input-form">
+                      <div class="text-for-user">
+                        <h4>Let’s us know your language proficiency.</h4>
+                        <p>Tell us about any languages you can speak. Note that you can add multiple languages.</p>
+                      </div>
+                      <div class="input-field">
+                        <h4>Your Languages.</h4>
+                        <div class="form-area">
+                          <div class="input-box">
+                              <span>Language*</span>
+                              <input type="text" name="Language" class="user-language" id="userLanguage" placeholder="Enter language" required>
+                            </div>
+                            <div class="input-box">
+                              <span>Language Level</span>
+                              <select name="Language Level" class="language-level" id="languageLevel">
+                                <option value="Select level" selected>Select level</option>
+                                <option value="Novice">Beginner</option>
+                                <option value="Novice">Native speaker</option>
+                                <option value="Skillful">Very good</option>
+                                <option value="Beginer">Highly proficient in speaking and writing</option>
+                              </select>
+                            </div>
+                        </div>
+                          <div class="add-language">
+                            <button type="submit" class="language-plus">+ Add Language</button>
+                          </div>
+                      </div>
+                    </div> -->
+                      <!-- Language Stops -->
+
+                      <!-- Other Sections -->
+                      <!-- <div class="input-form">
+                        <div class="text-for-user">
+                          <h4>Need to add any of this sections.<h4>
+                          <p>Kindly select any section you wish to add to your resume.</p>
+                        </div>
+                        <div class="input-field">
+                          <h4>Add Section</h4>
+                          <div class="section-area">
+                            <div class="section-box">
+                              <i class="far fa-address-book" aria-hidden="true"></i>
+                                <span>Reference</span>
+                            </div>
+                            <div class="section-box">
+                              <i class="far fa-address-book" aria-hidden="true"></i>
+                                <span>Project</span>
+                            </div>
+                            <div class="section-box">
+                              <i class="far fa-address-book" aria-hidden="true"></i>
+                                <span>Publication</span>
+                            </div>
+                            <div class="section-box">
+                              <i class="far fa-address-book" aria-hidden="true"></i>
+                                <span>Certificate</span>
+                            </div>
+                            <div class="section-box">
+                              <i class="far fa-address-book" aria-hidden="true"></i>
+                                <span>Award</span>
+                            </div>
+                            <div class="section-box">
+                              <i class="far fa-address-book" aria-hidden="true"></i>
+                                <span>Hobby/Interest</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+                      <!-- Other sections end -->
+
+                      <!-- References -->
+                      <!-- <div class="input-form">
+                        <div class="text-for-user">
+                          <h4>Need to add references if need be.</h4>
+                          <p>Provide those that can attest to your information.</p>
+                        </div>
+                        <div class="input-field">
+                          <h4>References.</h4>
+                          <div class="form-area">
+                            <div class="input-box">
+                                <span>Referent's Full Name*</span>
+                                <input type="text" name="reference name" class="referent-name" id="referentName" placeholder="Referent Full Name" required>
+                              </div>
+                              <div class="input-box">
+                                <span>Place of Work</span>
+                                <input type="text" name="reference work place" class="referent-work-place" id="referentWorkPlace" placeholder="Referent Place of Work">
+                              </div>
+                              <div class="input-box">
+                                <span>Phone Number*</span>
+                                <input type="text" name="reference phone nnumber" class="referent-number" id="referentNumber" placeholder="Referent Phone Number" required>
+                              </div>
+                              <div class="input-box">
+                                <span>Email*</span>
+                                <input type="email" name="reference email" class="referent-email" id="referentEmail" placeholder="Referent's Email" required>
+                              </div>
+                        </div>
+                        <div class="more-reference">
+                            <a href="#" class="add-reference">+ Add more reference</a>
+                        </div>
+                        </div>
+                      </div> -->
+                      <!-- References Ends -->
+
+                      <!-- Project Starts -->
+                      <!-- <div class="input-form">
+                        <div class="text-for-user">
+                          <h4>Need to add Project if need be.</h4>
+                          <p>Provide projects you've engaged yourself into.</p>
+                        </div>
+                        <div class="input-field">
+                          <h4>Project.</h4>
+                          <div class="form-area">
+                            <div class="input-box">
+                                <span>Project Title*</span>
+                                <input type="text" name="project title" class="project-title" id="projectTitle" placeholder="Enter project title" required>
+                              </div>
+                              <div class="input-box">
+                                <span>Sub Title</span>
+                                <input type="text" name="sub project title" class="sub-project-title" id="subProjectTitle" placeholder="Enter sub project title">
+                              </div>
+                              <div class="input-box">
+                                <span>Start Date</span>
+                                <input type="month" name="start date" class="project-start-date" id="projectEndDate">
+                              </div>
+                              <div class="input-box">
+                                <span>End Date</span>
+                                <input type="month" name="end date" class="project-end-date" id="projectEndDate">
+                              </div>
+                        </div>
+                        <div class="more-information">
+                          <span>Project Description</span>
+                            <textarea name="project description" class="project-description" id="projectDescription"></textarea>
+                            <a href="#" class="add-reference">+ Add more project</a>
+                        </div>
+                      </div>
+                      </div> -->
+                      <!-- Projects Ends -->
+
+            <!-- Publication Starts -->
+            <!-- <div class="input-form">
+              <div class="text-for-user">
+                <h4>Need to add Publication if need be.</h4>
+                <p>Provide peper work you've published. Write short description about the paper.</p>
+              </div>
+              <div class="input-field">
+                <h4>Publication.</h4>
+                <div class="form-area">
+                  <div class="input-box">
+                      <span>Publication Title*</span>
+                      <input type="text" name="publication title" class="publication-title" id="publicationTitle" placeholder="Enter publication title" required>
+                    </div>
+                    <div class="input-box">
+                      <span>Publisher</span>
+                      <input type="text" name="publisher" class="publisher" id="publisher" placeholder="Enter the publisher">
+                    </div>
+                    <div class="input-box">
+                      <span>Link</span>
+                      <input type="url" name="publication link" class="publication-link" id="publicationLink">
+                    </div>
+                    <div class="input-box">
+                      <span>Date</span>
+                      <input type="year" name="year of publication" class="publication-year" id="publicationYear">
+                    </div>
+              </div>
+              <div class="more-information">
+                <span>Publication Description</span>
+                  <textarea name="project description" class="project-description" id="projectDescription"></textarea>
+                  <a href="#" class="add-reference">+ Add more publication</a>
+              </div>
+            </div>
+            </div> -->
+            <!-- Publications Ends -->
+
+            <!-- Hobby/Interest Starts -->
+            <!-- <div class="input-form">
+              <div class="text-for-user">
+                <h4>Need to add your hobbies and interest.</h4>
+                <p>Provide what you like to do most.</p>
+              </div>
+              <div class="input-field">
+                <h4>Hobbies/Interest.</h4>
+                <div class="form-area">
+                  <textarea name="hobbies/interest" class="hobbies-interest" id="hobbiesInterest" placeholder="e.g. painting, dancing, reading, listening to music"></textarea>
+                </div>
+              </div>
+            </div> -->
+            <!-- Hobby/Interest Ends -->
+
+            <!-- Awards Start -->
+            <!-- <div class="input-form">
+              <div class="text-for-user">
+                <h4>Need to add some of your Award.</h4>
+                <p>Provide peper work you've published. Write short description about the paper.</p>
+              </div>
+              <div class="input-field">
+                <h4>Publication.</h4>
+                <div class="form-area">
+                  <div class="input-box">
+                      <span>Award Title*</span>
+                      <input type="text" name="award title" class="award-title" id="awardTitle" placeholder="Enter the award title" required>
+                    </div>
+                    <div class="input-box">
+                      <span>Award Issuer</span>
+                      <input type="text" name="award issuer" class="award-issuer" id="wardIssuer" placeholder="Enter the issuer">
+                    </div>
+                    <div class="input-box">
+                      <span>Link</span>
+                      <input type="url" name="issuer link" class="issuer-link" id="issuerLink">
+                    </div>
+                    <div class="input-box">
+                      <span>Date</span>
+                      <input type="date" name="date of issue" class="date-of-issue" id="dateOfIssue">
+                    </div>
+              </div>
+              <div class="more-information">
+                <span>Award Description</span>
+                  <textarea name="project description" class="project-description" id="projectDescription"></textarea>
+                  <a href="#" class="add-reference">+ Add more award</a>
+              </div>
+            </div>
+            </div> -->
+            <!-- Awards Ends -->
+
+            <!-- Certificate Starts -->
+            <div class="input-form">
+              <div class="text-for-user">
+                <h4>Need to add some of your obtained certifications.</h4>
+                <p>Showcase your certifications to an employer. Note that you can add multiple certifications.</p>
+              </div>
+              <div class="input-field">
+                <h4>Certifications.</h4>
+                <div class="form-area">
+                  <div class="input-box">
+                      <span>Certificate Title*</span>
+                      <input type="text" name="certificate title" class="certificate-title" id="certtificateTitle" placeholder="Enter the certificate title" required>
+                    </div>
+                    <div class="input-box">
+                      <span>Certificate Issuer</span>
+                      <input type="text" name="certificate issuer" class="certificate-issuer" id="certificateIssuer" placeholder="Enter the certificate issuer">
+                    </div>
+                    <div class="input-box">
+                      <span>Reason</span>
+                      <select name="Reason category" class="reason-category" id="reasonCategory">
+                        <option value="Select level" selected>Select reason</option>
+                        <option value="Training">Training</option>
+                        <option value="Courses">Courses</option>
+                        <option value="Internship">Internship</option>
+                        <option value="Others">Others</option>
+                      </select>
+                    </div>
+                    <div class="input-box">
+                      <span>Date</span>
+                      <input type="date" name="date on certificate" class="date-on-certificate" id="dateOnCertificate">
+                    </div>
+              </div>
+              <div class="more-information">
+                <span>Certificate Description</span>
+                  <textarea name="certificate description" class="certificate-description" id="certificateDescription"></textarea>
+                  <a href="#" class="add-certifications">+ Add more certifications</a>
+              </div>
+            </div>
+
+            <!-- Certificate Ends -->
+                <div class="form-cta">
+                <button type="button" class="back-cta">Back</button>
+                <button type="button" class="continue-cta">Save & Continue</button>
+              </div>
+                      </div>
+            <div class="resume-preview">
+            <div class="cta-buttons">
+              <a href="#" class="template-cta"><i class="far fa-address-book" aria-hidden="true"></i> Select Template</a>
+              <button type="preview" class="preview-cta">Preview</button>
+            </div>
+            <img src="/images/r2.jpg" alt="">
+            <div class="download-button">
+              <button type="download" class="download-cta">Download Resume</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </main>
+        <div class="all-right">
+          <p>2023 SA Resume. All Right Reserved</p>
+        </div>
+      </body>
+</html>

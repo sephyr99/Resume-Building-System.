@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&family=Questrial&display=swap');
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"]
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  ul{
+      list-style-type: none;
+  }
+ a {
+     text-decoration: none;
+ }
+ h1, h2, h3, h4, h5, h6{
+  font-family: "Raleway", sans-serif;
+ }
+ p, a, input{
+  font-family: 'Mulish', sans-serif;
+ }
+ :root {
+    --primary-color: #112B3C;
+    --secondary-color: #F36B17;
+    --light-color: #F8F9F9;
+    --shadow-color: #E3E6E8;
+    --complementary-color: #919DA5;
+    --overlay-color: #9eabb4bd;
+  }
+  .flex-direction{
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-align{
+    display: flex;
+    align-items: center;
+    
+  }
+  .flex-space{
+    display: flex;
+    justify-content: space-between;
+  }
+/* Navbar */
+header{
+background-color: var(--primary-color);
+padding: 1rem 4rem;
+}
+.brandLogo_img{
+    width: auto;
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 100%;
+}
+.container{
+  width: 100%;
+}
+.brandtext{
+    color: var(--secondary-color);
+}
+nav{
+    gap: 2rem;
+}
+  ul {
+    display: flex;
+    padding: 0%;
+  }
+  .nav-links{
+    display: flex;
+    align-items: center;
+  }
+.nav_menu{
+    color: var(--light-color);
+    padding: 0.5rem 1.2rem;
+    margin: 0 5px;
+}
+  .nav_menu:hover {
+    border-bottom: 2px var(--secondary-color) solid;
+    border-radius: 2px;
+    transition: 150ms ease-in;
+  }
+  .logout_cta{
+      background-color: var(--secondary-color);
+      color: var(--light-color);
+      padding: 0.5rem 1.5rem;
+      border-radius: 1rem;
+  }
+  .logout_cta:hover{
+    background-color: transparent;
+    border: 2px solid var(--light-color);
+    color: var(--secondary-color);
+  }
+  /* Header Stops */
+
+  /* Hero Section */
+  main{
+    background-image: url("/images/background-image.jpg");
+  }
+
+.templates{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+  padding-block: 2rem;
+}
+.template-text h3{
+  font-size: 3rem;
+  color: var(--secondary-color);
+}
+.template-text p{
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+.templates-images{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.templates-images img{
+  background-color: var(--overlay-color);
+  width: 80%;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transform: scale(0.93);
+  transition: transform 500ms ease-in-out;
+}
+.templates-images img:hover{
+    transform: scale(1);
+  transition: transform 500ms ease-in-out;
+  }
+.all-right{
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border-block-start: 2px solid var(--complementary-color);
+  text-align: center;
+  padding-block: 1rem;
+  font-size: 1.2rem;
+}
