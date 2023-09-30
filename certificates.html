@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/styles6.css"/>
+        <title>Certificates</title>
+      </head>
+      <body>
+          <!-- Header and Navigation Section -->
+          <header class="navbar">
+                <div class="container flex-space">
+                    <div class="brandlogo flex-align">
+                        <h2 class="brandtext">SA Resume</h2>
+                    </div>
+                  <nav class="nav-links flex-space flex-align">
+                    <ul>
+                      <li><a class="nav_menu" href="dashboard.html">Dashboard</a></li>
+                      <li><a class="nav_menu" href="templates.html">Templates</a></li>
+                      <li><a class="nav_menu" href="create-resume.html">Create Resume</a></li>
+                    </ul>
+                    <a href="/index.html" class="logout_cta">Log out</a>
+                  </nav>
+                </div>
+          </header>
+          <main class="flex-direction">
+            <div class="introduction-text">
+                <h3 class="h3-text">Create your resume in 5 minutes.</h3>
+                <p>The platform is here to assist you in creating a polished and impactful resume.</p>
+            </div>
+                <!-- Certificate Start -->
+                <div class="info-container">
+                    <div class="input-form flex-direction">
+                        <div class="text-for-user">
+                        <h4>Need to add some of your obtained certifications.</h4>
+                        <p>Showcase your certifications to an employer. Note that you can add multiple certifications.</p>
+                        </div>
+                        <div class="input-field">
+                        <h4>Certifications.</h4>
+                        <div class="form-area">
+                            <div class="input-box flex-direction">
+                            <span>Certificate Title*</span>
+                            <input type="text" name="certificate title" class="certificate-title general-input-style" id="certtificateTitle" placeholder="Enter the certificate title" required>
+                            </div>
+                            <div class="input-box flex-direction">
+                            <span>Certificate Issuer</span>
+                            <input type="text" name="certificate issuer" class="certificate-issuer general-input-style" id="certificateIssuer" placeholder="Enter the certificate issuer">
+                            </div>
+                            <div class="input-box flex-direction">
+                            <span>Reason</span>
+                            <select name="Reason category" class="reason-category general-input-style" id="reasonCategory">
+                                <option value="Select level" selected>Select reason</option>
+                                <option value="Training">Training</option>
+                                <option value="Courses">Courses</option>
+                                <option value="Internship">Internship</option>
+                                <option value="Others">Others</option>
+                            </select>
+                            </div>
+                            <div class="input-box flex-direction">
+                            <span>Date</span>
+                            <input type="date" name="date on certificate" class="date-on-certificate general-input-style" id="dateOnCertificate">
+                            </div>
+                        </div>
+                        <div class="more-information">
+                        <span>Certificate Description</span>
+                        <textarea name="certificate description" class="certificate-description general-input-style" id="certificateDescription"></textarea>
+                        <a href="#" class="add-certifications">+ Add more certifications</a>
+                        </div>
+                        <div class="form-cta">
+                        <button type="button" class="back-cta form-cta-com-att">Back</button>
+                        <button type="button" class="continue-cta form-cta-com-att">Save & Continue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+          </main>
+          <div class="all-right">
+            <p>2023 SA Resume. All Right Reserved</p>
+          </div>
+      </body>
+</html>

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/styles5.css" />
-        <title>Resume Builder</title>
+        <title>Create Resume</title>
       </head>
       <body>
           <!-- Header and Navigation Section -->
@@ -14,7 +14,7 @@
                     <div class="brandlogo flex-align">
                         <h2 class="brandtext">SA Resume</h2>
                     </div>
-                  <nav class="nav-links flex-space">
+                  <nav class="nav-links flex-align flex-space">
                     <ul>
                       <li><a class="nav_menu" href="dashboard.html">Dashboard</a></li>
                       <li><a class="nav_menu" href="templates.html">Templates</a></li>
@@ -24,67 +24,59 @@
                   </nav>
                 </div>
           </header>
-      <main>
+      <main class="flex-direction">
         <div class="introduction-text">
           <h3 class="h3-text">Create your resume in 5 minutes.</h3>
         <p>The platform is here to assist you in creating a polished and impactful resume.</p>
         </div>
         <div class="info-container">
-          <div class="input-form">
+          <div class="input-form flex-direction">
             <div class="text-for-user">
               <h4>Start with your header information</h4>
               <p>Include your full name and at least one way for employers to reach you.</p>
             </div>
-            <div class="input-field">
-              <h4>Personal Details</h4>
-                <div class="form-area">
-                  <div class="input-box">
-                    <span>First Name *</span>
-                    <input type="text" name="firstname" class="first-name" id="firstName" placeholder="Your First Name" required>
+            <div class="user-info-container">
+              <div class="input-field">
+                <h4>Personal Details</h4>
+                  <div class="form-area">
+                    <div class="input-box flex-direction">
+                      <span>First Name *</span>
+                      <input type="text" name="firstname" class="first-name general-input-style" id="firstName" placeholder="Your First Name" required>
+                    </div>
+                    <div href="#" class="user-image">
+                      <i class="far fa-user-circle" aria-hidden="true"></i>
+                      <input type="file" name="userimage" id="userImage">
+                    </div>
+                    <div class="input-box flex-direction">
+                      <span>Last Name *</span>
+                      <input type="text" name="lastname" class="last-name general-input-style" id="lastName" placeholder="Your Last Name" required>
+                    </div>
+                    <div class="input-box flex-direction">
+                      <span>Middle Name</span>
+                      <input type="text" name="middlename" class="middle-name general-input-style" id="middleName" placeholder="Your Middle Name">
+                    </div>
+                    <div class="input-box flex-direction">
+                      <span>Email *</span>
+                      <input type="email" name="email" class="user-email general-input-style" id="userEmail" placeholder="Your email address" required>
+                    </div>
+                    <div class="input-box flex-direction">
+                      <span>Phone Number *</span>
+                      <input type="text" name="phonenumber" class="phone-number general-input-style" id="phoneNumber" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="input-box flex-direction">
+                      <span>Country</span>
+                      <input type="text" name="country" class="user-country general-input-style" id="userCountry" placeholder="Your Country">
+                    </div>
+                    <div class="input-box flex-direction">
+                      <span>City</span>
+                      <input type="text" name="City" class="user-city general-input-style" id="userCity" placeholder="Your City">
+                    </div>
                   </div>
-                  <div href="#" class="user-image">
-                    <i class="far fa-user-circle" aria-hidden="true"></i>
-                    <input type="file" name="userimage" id="userImage">
+                  <div class="form-cta flex-space">
+                  <button type="button" class="back-cta form-cta-com-att">Back</button>
+                  <button type="button" class="continue-cta form-cta-com-att">Save & Continue</button>
                   </div>
-                  <div class="input-box">
-                    <span>Last Name *</span>
-                    <input type="text" name="lastname" class="last-name" id="lastName" placeholder="Your Last Name" required>
-                  </div>
-                  <div class="input-box">
-                    <span>Middle Name</span>
-                    <input type="text" name="middlename" class="middle-name" id="middleName" placeholder="Your Middle Name">
-                  </div>
-                  <div class="input-box">
-                    <span>Email *</span>
-                    <input type="email" name="email" class="user-email" id="userEmail" placeholder="Your email address" required>
-                  </div>
-                  <div class="input-box">
-                    <span>Phone Number *</span>
-                    <input type="text" name="phonenumber" class="phone-number" id="phoneNumber" placeholder="Your Phone Number" required>
-                  </div>
-                  <div class="input-box">
-                    <span>Country</span>
-                    <input type="text" name="country" class="user-country" id="userCountry" placeholder="Your Country">
-                  </div>
-                  <div class="input-box">
-                    <span>City</span>
-                    <input type="text" name="City" class="user-city" id="userCity" placeholder="Your City">
-                  </div>
-                </div>
-              <div class="form-cta">
-                <button type="button" class="back-cta">Back</button>
-                <button type="button" class="continue-cta">Save & Continue</button>
               </div>
-            </div>
-          </div>
-          <div class="resume-preview">
-            <div class="cta-buttons">
-              <a href="#" class="template-cta"><i class="far fa-address-book" aria-hidden="true"></i> Select Template</a>
-              <button type="preview" class="preview-cta">Preview</button>
-            </div>
-            <img src="/images/r2.jpg" alt="">
-            <div class="download-button">
-              <button type="download" class="download-cta">Download Resume</button>
             </div>
           </div>
         </div>

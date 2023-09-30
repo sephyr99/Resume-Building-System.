@@ -62,22 +62,21 @@ html:focus-within {
   .flex-align{
     display: flex;
     align-items: center;
-    
   }
   .flex-space{
     display: flex;
     justify-content: space-between;
   }
+  .full-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
 /* Navbar */
 header{
 background-color: var(--primary-color);
 padding: 1rem 4rem;
-}
-.brandLogo_img{
-    width: auto;
-    height: 3rem;
-    margin-right: 1rem;
-    border-radius: 100%;
 }
 .container{
   width: 100%;
@@ -92,10 +91,6 @@ nav{
     display: flex;
     padding: 0%;
   }
-  .nav-links{
-    display: flex;
-    align-items: center;
-  }
 .nav_menu{
     color: var(--light-color);
     padding: 0.5rem 1.2rem;
@@ -103,7 +98,6 @@ nav{
 }
   .nav_menu:hover {
     border-bottom: 2px var(--secondary-color) solid;
-    border-radius: 2px;
     transition: 150ms ease-in;
   }
   .logout_cta{
@@ -126,10 +120,6 @@ nav{
 
 .templates{
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 1.5rem;
   text-align: center;
   padding-block: 2rem;

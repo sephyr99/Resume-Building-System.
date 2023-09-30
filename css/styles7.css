@@ -1,0 +1,418 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 6rem 4rem;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+.template-1, .template-2, .template-3{
+    width: 42vw;
+    padding-inline: 2rem;
+}
+.template-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.user-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.user-name{
+    font-size: 2rem;
+}
+.user-em-ad-pn{
+    display: flex;
+    gap: 0.6rem;
+}
+.user-em-ad-pn p{
+    font-size: 0.8rem;
+}
+.section-heading{
+    background-color: #c4c4c4;
+    padding: 0.1rem 0 0.1rem 0.5rem;
+    font-size: 1.1rem;
+    margin-block-end: 0.8rem;
+}
+.summary-details{
+    margin-inline: 1rem;
+    text-align: justify;
+}
+.work-container{
+    display: flex;
+    gap: 1rem;
+    margin-inline: 1rem;
+    margin-block-end: 1rem;
+}
+.history-1{
+    width: 40vw;
+}
+.history-1 .job-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.description{
+    width: 60vw;
+    text-align: justify;
+}
+.all-skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-inline-start: 1rem;
+}
+.edu-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    margin-inline: 1rem;
+
+}
+.deg-field, .sch-loc, .date{
+    display: flex;
+}
+.deg-field .degree{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-inline-end: 0.2rem;
+}
+.deg-field .field-of-study{
+    font-size: 1.1rem;
+}
+.sch-loc .school{
+    margin-inline-end: 0.2rem;
+}
+.date{
+    margin-block-start: 0.2rem;
+}
+.date .start-date{
+    margin-inline-end: 2rem;
+}
+.cert-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    margin-inline: 1rem;
+}
+.cert-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Template 2 */
+.template-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.users-name{
+    padding-block-end: 0.5rem;
+    border-block-end: 2px solid #c4c4c4;
+}
+.resume-content{
+    display: flex;
+    gap: 2rem;
+    padding-block: 0.5rem;
+}
+.aside-1{
+    width: 80vw;
+}
+.aside-2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 10vw;
+}
+.heading-container .heading-title{
+    font-size: 1.1rem;
+    padding-block-end: 0.3rem;
+    border-block-end: 2px solid #c4c4c4;
+    margin-block-end: 0.5rem;
+}
+.prof-content{
+    text-align: justify;
+    padding-block: 0.5rem;
+    margin-block-end:0.5rem;
+}
+.work-content{
+    margin-block-end: 1rem;
+}
+.title-date, .emp-location{
+    display: flex;
+    align-items: first baseline;
+}
+.job-title{
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+.date{
+    font-size: 0.8rem;
+    margin-inline-start: 1rem;
+}
+.city-country{
+    margin-inline-start: 1rem;
+}
+.job-description{
+    font-size: 0.9rem;
+    margin-block-start: 0.3rem;
+    text-align: justify;
+}
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.skill-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.edu-contents{
+    margin-block-end: 0.5rem;
+}
+.degr-field .field-of-study{
+    font-size: 0.8rem;
+}
+.degr-field .degree{
+    font-weight: 600;
+}
+.schl-loc{
+    font-size: 0.9rem;
+    margin-block-start: 0.3rem;
+}
+.sch-date{
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 0.3rem;
+    font-size: 0.8rem;
+}
+.cert-title{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.issue-date{
+    display: flex;
+    font-size: 0.9rem;
+    gap: 1rem;
+}
+.certi-descrp{
+    font-size: 0.9rem;
+    margin-block-start: 0.2rem;
+}
+.referee-name{
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+/* Template 3 */
+.template3-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.username{
+    font-size: 2rem;
+}
+.user-infomation .user-addresses{
+    display: flex;
+    gap: 2rem;
+    margin-block-start: 0.5rem;
+}
+.cont-head-name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-block-end: 0.2rem;
+    border-block-end: 2px solid #727272;
+    margin-block-end: 0.5rem;
+}
+.exp-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-block-start: 0.4rem;
+}
+.exp-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.duration-date{
+    display: flex;
+    gap: 2rem;
+    font-size: 0.9rem;
+}
+.exp-descript, .pro-descript{
+    text-align: justify;
+}
+.edu-deg-field, .edu-sch-loc, .edu-date, .pro-date, .cert-reason-date{
+    display: flex;
+    gap: 1rem;
+}
+.education-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+.edu-degree{
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+.user-skill-contents, .lang-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+.project-summary{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-block-end: 0.5rem;
+}
+.cert-info{
+    display: flex;
+    justify-content: space-between;
+}
+.proj-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.lang-level{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Template 4 */
+.user-personal-details{
+    background-color: #727272;
+    border-radius: 8px;
+    padding: 1rem;
+}
+.personal-details{
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+}
+.name-img, .personal-contact{
+    display: flex;
+    flex-direction: column;
+}
+.img-box{
+    background-color: aliceblue;
+    width: 7.5vw;
+    height: 15vh;
+    border-radius: 100%;
+    margin-block-end: 0.5rem;
+    object-fit: cover;
+}
+.personal-name{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.personal-contact{
+    gap: 1.5rem;
+    padding-block: 1rem;
+}
+.per-info-container{
+    display: flex;
+    margin: 1rem;
+    gap: 1rem;
+}
+.side-1{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.head-title{
+    font-size: 1.3rem;
+}
+.per-work-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.per-work-title-date, .job-emp-location{
+    display: flex;
+    align-items: first baseline;
+}
+.work-title{
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+.work-date{
+    font-size: 0.8rem;
+    margin-inline-start: 1rem;
+}
+.job-city-country{
+    margin-inline-start: 1rem;
+}
+.job-descrp, .per-pro-descript, .per-cert-descrpt{
+    font-size: 0.9rem;
+    margin-block-start: 0.3rem;
+    text-align: justify;
+}
+.education-history-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.per-degr-field .per-field-of-study{
+    font-size: 0.8rem;
+}
+.per-degr-field .per-degree{
+    font-weight: 600;
+}
+.per-schl-loc, .per-sch-date, .per-pro-date{
+    display: flex;
+    gap: 2rem;
+    font-size: 0.9rem;
+    margin-block-start: 0.3rem;
+}
+.per-proj-summary{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-block-end: 0.5rem;
+}
+.side-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.per-cert-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.per-skill-contents, .per-ref-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-block-start: 0.5rem;
+}
+.per-cert-reason-date{
+    display: flex;
+    gap: 2rem;
+    font-size: 0.9rem;
+}
+.per-lang-and-level{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    margin-block: 0.5rem;
+}
+.per-lang-level{
+    font-size: 0.8rem;
+}
+.per-referee-name{
+    font-weight: 600;
+}

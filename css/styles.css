@@ -62,22 +62,21 @@ html:focus-within {
   .flex-align{
     display: flex;
     align-items: center;
-    
   }
   .flex-space{
     display: flex;
     justify-content: space-between;
   }
+  .full-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 /* Navbar */
 header{
 background-color: var(--primary-color);
 padding: 1rem 4rem;
-}
-.brandLogo_img{
-    width: auto;
-    height: 3rem;
-    margin-right: 1rem;
-    border-radius: 100%;
 }
 .container{
   width: 100%;
@@ -92,10 +91,6 @@ nav{
     display: flex;
     padding: 0%;
   }
-  .nav-links{
-    display: flex;
-    align-items: center;
-  }
 .nav_menu{
     color: var(--light-color);
     padding: 0.5rem 1.2rem;
@@ -103,7 +98,6 @@ nav{
 }
   .nav_menu:hover {
     border-bottom: 2px var(--secondary-color) solid;
-    border-radius: 2px;
     transition: 150ms ease-in;
   }
   .login_cta{
@@ -132,8 +126,6 @@ nav{
 .hero_page_container {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 2rem;
 }
@@ -150,7 +142,6 @@ nav{
 .heropage-content p {
   font-size: 1.3rem;
   color: var(--secondary-color);
-  text-shadow: 2px 2px 4px var(--light-color);
   margin-block-end: 2.5rem;
 }
 .get_started_cta {
@@ -164,17 +155,12 @@ nav{
 }
 .get_started_cta:hover{
   background-image: linear-gradient(to left, #F36B17, #fdbb92);
-  transition: 200ms ease-in;
-  font-weight: 700;
+  transition: 100ms ease-in;
 }
 /* Hero Page Stops */
 .how-it-works{
   border-block: 2px solid var(--primary-color);
   padding: 2rem 6rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
    gap: .5rem;
    height: 100vh;
 }
@@ -192,8 +178,6 @@ nav{
   margin-block-start: 2rem;
 }
 .aside{
-  display: flex;
-  align-items: center;
   gap: 1.5rem;
   width: 100%;
 }
@@ -251,10 +235,6 @@ aside img:hover{
 .templates{
   background-color: var(--primary-color);
   height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 1.5rem;
   text-align: center;
 }
